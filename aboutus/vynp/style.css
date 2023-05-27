@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Appears;
+    src: url(FONT/DFVN\ Appears.otf);
+}
+@font-face {
+    font-family: Philosopher;
+    src: url(FONT/Philosopher-BoldItalic.otf);
+}
+body{
+    background-color: #faf1ef;
+}
+ul li {
+    list-style-type: none;
+}
+#header{
+    width: max-content;
+    margin: 0 auto;
+}
+
+
+
+#logo img{
+    height: 100px;
+}
+#menu li{
+    float: right;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+#menu li a{
+    padding: 10px;
+    font-family: Philosopher;
+    color: #c78680;
+    text-decoration: none;
+}
+#menu li a:hover, #menu li a.active{
+    padding: 10px;
+    background-color: rgb(252, 254, 255);
+    border-radius: 3px;
+    font-family: Philosopher;
+    color: #c78680;
+    text-decoration: none;
+}
+
+#content{
+    width: max-content;
+    margin: auto;
+    background-color: #c88781;
+    border-radius: 20px;
+    padding: 20px;
+}
+#content h1{
+    font-family: Appears;
+    text-align: center;
+}
+#content img{
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#contact_form input{
+    background: transparent;
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    border-bottom: 2px dashed #faf1ef;
+    color: #faf1ef;
+    text-align: center;
+}
+
+#contact_form input::placeholder{
+    color: #faf1ef;
+    text-align: center;
+}
+
+#contact_form button{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+}
+
+#social img{
+    height: 40px;
+    padding: 0px 10px;
+}
+

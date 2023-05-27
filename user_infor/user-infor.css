@@ -1,0 +1,21 @@
+.change-tab-btn{
+    border: none;
+    z-index: 10;
+    width: 50px;
+    position: absolute;
+    top: 2%;
+    right: 26%;
+    border-radius: 10px;
+}
+.change-tab-btn p{
+    display: none;
+}
+.change-tab-btn:hover{
+    /* border: 1px solid #f2f2f2; */
+    background: transparent;
+    width: 200px;
+}
+.change-tab-btn:hover p{
+    
+    display: inline;
+}

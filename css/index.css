@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&family=Quicksand:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: Geomanist;
+    src: url(/__ProjectWeb/font/Geomanist-Bold.otf);
+}
+@font-face {
+    font-family: Phudu;
+    src: url(/__ProjectWeb/font/DTPhudu-Bold.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Geomanist, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+:root{
+    --bg-color: #0a092d;
+    --text-color: #ffff;
+    --main-color: #0ea5c7;
+    --anther-color: #e6bb1d;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+a{
+    -webkit-user-drag: none;
+}
+
+/* TÙY CHỈNH SCROLL bAR */
+::-webkit-scrollbar{
+    width: 4px;
+    background: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(-45deg,#860937, #6a5af9, #d66efd);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-button{
+    height: 50px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0deg,#0a092d00, #0a092d6d);
+    padding: 28px 10%;
+    transition: all .50s ease;
+}
+
+p{
+    font-style: italic;
+    width: 500px;
+    font-family: Quicksand,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    border-top: 2px solid #ffffffcf;
+    padding-top: 15px;
+    padding-left: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+h3{
+    width: 500px;
+    font-family: Quicksand,sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+#bgvideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    z-index: -1;
+    filter: opacity(0.5);
+    mix-blend-mode: lighten;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar a:hover, .navbar a.active{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    transition: 0.3s;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+#logo{
+    font-family: Phudu;
+    color: #ffae00;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+#logo img{
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 50px;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+#code, #login{
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all .50s ease;
+}
+
+
+#code a{
+    position: relative;
+    margin-right: 10px;
+    color: var(--anther-color);
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    border: 2px solid var(--anther-color);
+    border-radius: 3px;
+    transition: color .3s;
+    z-index: 2;
+    margin-right: 30px;   
+}
+
+#code a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    background: var(--anther-color);
+    transition: transform 0.5s  cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    z-index: -1;
+}
+#code a:hover{
+    color: var(--text-color);   
+}
+#code a:hover::before{
+    transform: scaleX(1);
+    background: var(--anther-color);
+}
+
+#login a{
+    justify-items: center;
+    color: black;
+    transition: 0.3s ease-in-out;
+    background-color: var(--anther-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#login a:hover {
+    justify-items: center;
+    color: var(--text-color);
+    background-color:#ffae00;
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+/*BODY ở đây*/
+#first_title{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+#first_title h1{
+    text-transform: uppercase;
+    font-size: 6.5vmax;
+    text-align: center;
+    word-spacing: 3%;
+    line-height: 130%;
+    user-select: none;
+    -webkit-text-stroke: 1px var(--text-color);
+    color: transparent;
+    background-image: url(/__ProjectWeb/image/back.png);
+    -webkit-background-clip: text;
+    position: 0 0;
+    animation: back 25s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+#first_title h2{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.2vw;
+
+}
+
+
+.registbtn a{
+    position: absolute;
+    display: flex;
+    right: 20%;
+    bottom: 20%;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--text-color);
+    border: 3px solid var(--text-color);
+    padding: 15px 20px;
+    border-radius: 3px;
+    transition: background 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    text-align: center;
+}
+.registbtn a:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.5s  cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+

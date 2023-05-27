@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&family=Quicksand:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: Geomanist;
+    src: url(/font/Geomanist-Bold.otf);
+}
+@font-face {
+    font-family: Phudu;
+    src: url(/font/DTPhudu-Bold.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+a{
+    -webkit-user-drag: none;
+}
+:root{
+    --bg-color: #f2f2f2;
+    --text-color:  #020116;
+    --main-color: #5669a2;
+    --anther-color: #e6bb1d;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+
+
+
+header{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 28px 10%;
+    transition: all .50s ease;
+}
+
+.navbar{
+    display: flex;
+    
+}
+.navbar a{
+    font-family: Geomanist;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 0px 30px;
+
+}
+.navbar a:hover, .navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.navbar h1{
+
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+
+#logo img{
+
+    margin-top: 5px;
+    width: 50px;
+}
+
+.user{
+    
+    display: flex;
+}
+
+.user a{
+    font-family: Geomanist;
+    scale: 0.8;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--anther-color);
+    color: var(--bg-color);
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-align: center;
+}
+.user a:hover{
+    background-color: #e2aa01;
+    box-shadow: 2px 2px 0px var(--text-color);
+}
+.user i{
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+.user button{
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.user img{
+    width: 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#background img{
+    position: absolute;
+    right: -10%;
+    max-height: 100vh;
+    z-index: -10;
+    mix-blend-mode: screen;
+    user-select: none;
+}
+
+/* ****CUSTOMIZE BODY**** */
+.body{
+    position: relative;
+    top: 10%;
+    width: 100vw;
+    height: 85%;
+}
+/* TÙY CHỈNH SCROLL bAR */
+::-webkit-scrollbar{
+    width: 4px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(-45deg,#860937, #6a5af9, #d66efd);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-button{
+    height: 10px;
+}
+.table{
+    display: flex;
+    position: absolute;
+    font-size: 1rem;
+    width: 45%;
+    right: 2%;
+    top: 0;
+    padding-left: 5px;
+    padding-right: 5px auto;
+    
+    background-color: #ffff;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #0201161d;
+    resize: both;
+    
+}
+
+
+
+
+.ri-checkbox-circle-fill, .ri-checkbox-blank-circle-fill{
+    font-size: 20px;
+}
+
+table {
+
+    margin-top: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    padding-top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+#quesCol{
+    width: 17vw;
+}
+
+
+td, th{
+    text-overflow: ellipsis;
+    padding: 5px 7px;
+    width: 70px;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+
+th {
+    color: #272838;
+    border-bottom: 2px solid #EB9486;
+    border-top: 5px solid #ffff;
+    position: sticky;
+    top: 0;
+    background-color: #F9F8F8;
+}
+
+td {
+    max-width: 70px;
+    font-size: 15px;
+    color: #7E7F9A;
+    text-align: start;
+}
+
+.content{
+    width: 50%;
+    
+}
+
+
+  

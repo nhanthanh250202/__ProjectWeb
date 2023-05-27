@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+
+    <link rel="stylesheet" href="/__ProjectWeb/css/register.css">
+
+    <link rel="shortcut icon" href="/__ProjectWeb/image/favicon.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/__ProjectWeb/js/register.js"></script>
+</head>
+<body>
+    <video id="bgvideo" src="/__ProjectWeb/video/bg.mp4" muted autoplay loop ></video>
+    <section>
+        <div class="form-box">
+            <a class="back" href="/__ProjectWeb/index.php"><i class="ri-arrow-go-back-line"></i>Trở về trang chủ</a>
+            <div class="form-val">
+                <h2>Đăng ký tài khoản</h2>
+                <form action="/__ProjectWeb/php/register.php" method="post" name="registerForm" enctype="multipart/form-data" onsubmit="return checkConfirm()">
+                    <div class="preview" id="image">
+                        <input style="margin-top: 20px; display: none;" type="file" name="file" accept="image/*"  id="file-input" onchange="loadFile(event)">
+                        <img for="file-input" id="output" src="user_data/image/_default.jpg" >
+                        <label for="file-input"><i class="ri-upload-2-line"></i> Ảnh đại diện của bạn</label>
+                    </div>
+                    <div class="inputbox" id="name">
+                        <i class="ri-emotion-line"></i>
+                        <input type="text" name="name" required>
+                        <label for="">Tên của bạn là</label>
+                    </div>
+                    <div class="inputbox" id="username">
+                        <i class="ri-user-line"></i>
+                        <input type="text" name="username"  required onchange="checkUser()">
+                        <label for="">Username của bạn là</label>
+                    </div>
+                    <error id="username-error">Username không gồm khoảng cách và tự đặc biệt</error>
+                    <div class="inputbox" style="border: none;" id="gender">
+                        <div class="radiobox">
+                            <input type="radio" name="gender" id="gender" value="nam">
+                            <p>Nam</p>
+                            <input type="radio" name="gender" id="gender" value="nu">
+                            <p>Nữ</p>
+                        </div>
+                        <label for="">Giới tính bạn là</label>
+                    </div>
+                    <div class="inputbox" id="bday">
+                        <i class="ri-calendar-2-line"></i>
+                        <input name="bday" placeholder=" " type ="text" onfocus="(this.type='date')" required >
+                        <label for="">Bạn sinh ngày</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="ri-at-line"></i>  
+                        <input type="email" name="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox" id="pass">
+                        <i class="ri-key-2-line"></i>
+                        <input type="password" name="password" required>
+                        <label for="">Mật khẩu</label>
+                    </div>
+                    <div class="inputbox" id="confirm_pass">
+                        <i class="ri-shield-keyhole-line"></i>
+                        <input type="password" name="confirm_password"required>
+                        <label for="">Xác nhận mật khẩu</label>
+                    </div>
+                    <div class="bot-form">
+                        <p class="login"> Đã có tài khoản? <a href="login.php">Đăng nhập ngay!</a></p>
+                        <button type="submit">Xong</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

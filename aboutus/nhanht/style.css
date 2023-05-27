@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@font-face {
+    font-family: Baemin;
+    src: url(BMFont.ttf);
+}
+@font-face {
+    font-family: Geomanist;
+    src: url(Geomanist.otf);
+}
+
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(70, 208, 202);
+    overflow: hidden;
+}
+ul li{
+    list-style: none;
+}
+
+
+#wrapper{
+    width: max-content;
+    margin: 0px auto;
+}
+
+
+/* *setup MENU Tại đây */
+#main_menu{
+    background-color: rgb(70, 208, 202);
+    border-radius: 20px;
+    padding: 10px 20px 2px 15px;
+}
+#logo img{
+    height: 70px;
+}
+#main_menu li{
+    font-family: Baemin;
+    float: right;
+    margin-top: 20px;
+}
+#main_menu li a{
+    color: aliceblue;
+    padding-left: 30px;
+    text-decoration: none;
+
+}
+#main_menu li a:hover,#main_menu li a.active{
+    background-color: aliceblue;
+    color: #2bc2bc;
+    padding: 9px;
+    margin: 0px 0px 0px 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #1794909d;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    justify-content: center ;
+    align-items: center;
+    margin: auto;
+    background-color: #f2f2f2;
+    border-radius: 40px;
+    padding: 40px 60px;
+    box-shadow: 10px 20px 30px #4d8f93c9; 
+}
+#content h1{
+    text-align: center;
+    font-family: Baemin;
+    color: #f3bab8;
+}
+
+#content table {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    height: 100px;
+}
+
+#content table button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:  #b9e877;
+    font-family: Geomanist;
+}
+#content table button:hover{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 0px;
+    background-color:  #e87777;
+    font-family: Geomanist;
+}
+
+#avatar{
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    border: 3px solid #f2f2f2;
+    box-shadow: 3px 5px 30px rgba(67, 67, 67, 0.368);
+}
+
+
+
+#music{
+    box-shadow: 5px 5px 10px #57575672; 
+}
+
+#content form input{
+    border: none;
+    height: 30px;
+    width: 305px;
+    margin: 10px;
+    background: transparent;
+    border-bottom: 2px solid rgba(58, 58, 58, 0.855);
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+}
+#content form input:focus{
+    outline: none;
+    border-bottom:  2px solid #b8e877;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+}
+#content form button{
+    display: flex;
+    margin: auto;
+    padding: 12px 20px;
+    border:  2px dashed #b8e877;
+    border-radius: 7px;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+}
+#content form button:hover{
+    border-radius: 7px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    background-color: #b8e877;
+}
+
+.social{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.social img:hover{
+    height: 45px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weolkom tu mai plộg</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div id="header">
+        <ul id="menu">
+            <a href="index.html" id="logo">
+                <img src="HINHANH/LOGO.png" alt="">
+            </a>
+            <li>
+                <a href="slider.html" class="active">
+                    Thư giản cùng tôi
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Thông Tin Liên Lạc
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    Thông Tin Cá Nhân
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+    <div id="content">
+        <h1>
+            🎧 Thời gian thư giản dành cho bạn 🎧
+        </h1>
+        <div class="detail">
+            <div class="slider">
+                <div class="group-slides">
+                    <!-- radio button -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <!-- end radio button  -->
+                    <!-- slide start -->
+                    <div class="slide first">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/4XhdM1Ku9JM4abVuRWAsgk?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>      
+                    </div>
+                    <div class="slide">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/0HPi6mBmKWFWB0OOhb28co?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>      
+                    </div>
+                    <div class="slide">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/6g7cdlMt3AUV99D6CgYcV7?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </div>
+                    <div class="slide">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/7KKL0ggK4cayFRXUMVNSQ5?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </div>
+                    <div class="slide">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/3HQHoNW6nesoIVybg8wtCr?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </div>
+                    <div class="slide">
+                        <iframe id="music" style="border-radius:12px" src="https://open.spotify.com/embed/track/7uACNnshGf5tGOj9i42irz?utm_source=generator" width="250" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </div>
+                    <!-- slide end -->
+        
+                    <!-- automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+                </div>
+                <!-- manula navigation start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+                <!-- manual navigation end -->
+            </div>
+            <!-- slider end -->
+        </div>
+        <audio src="audio/bg-about.mp3" autoplay></audio>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio'+counter).checked = true;
+                counter++;
+                if(counter>6){
+                    counter = 1;
+                }
+            },4000);
+        </script>
+  
+    </div>
+
+</body>
+</html>
